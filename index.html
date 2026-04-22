@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakeem Zarar Ahmad - Traditional Herbal Medicine & Natural Healing</title>
+    <meta name="description" content="Professional herbal medicine and natural healing services by Hakeem Zarar Ahmad. Specializing in digestive health, skin conditions, joint pain relief, and holistic wellness treatments.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Add a leaf SVG favicon for the tab bar -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2322c55e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2C12 2 4 7 4 14a8 8 0 0 0 16 0C20 7 12 2 12 2z'/%3E%3Cpath d='M12 22c4-4 4-10 0-14'/%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand" onclick="scrollToSection('home')">
+                    <!-- Replaced hash SVG with a leaf SVG icon -->
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2C12 2 4 7 4 14a8 8 0 0 0 16 0C20 7 12 2 12 2z" />
+                        <path d="M12 22c4-4 4-10 0-14" />
+                    </svg>
+                    <span class="nav-title">Hakeem Zarar Ahmad</span>
+                </div>
+                <div class="nav-links">
+                    <button onclick="scrollToSection('home')" class="nav-link">Home</button>
+                    <button onclick="scrollToSection('about')" class="nav-link">About</button>
+                    <button onclick="scrollToSection('services')" class="nav-link">Services</button>
+                    <button onclick="scrollToSection('testimonials')" class="nav-link">Testimonials</button>
+                    <button onclick="scrollToSection('contact')" class="nav-link">Contact</button>
+                    <button onclick="openBookingModal()" class="btn btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                        Book Consultation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">Traditional & Natural Healing</div>
+                    <h1 class="hero-title">Hakeem Zarar Ahmad</h1>
+                    <p class="hero-subtitle">Specialist in Herbal & Natural Healing</p>
+                    <p class="hero-description">
+                        "Healing is a matter of time, but it is sometimes also a matter of opportunity. 
+                        Nature itself is the best physician, and I am here to guide you on your journey 
+                        to natural wellness through time-tested herbal remedies."
+                    </p>
+                    <div class="hero-buttons">
+                        <button onclick="openBookingModal()" class="btn btn-primary btn-lg">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                            Book Consultation
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-container">
+                        <img src="herbal-doctor.jpg" alt="Hakeem Zarar Ahmad - Herbal Medicine Specialist" class="hero-img">
+                        <div class="hero-overlay"></div>
+                    </div>
+                    <div class="hero-badge">
+                        <div class="stars">
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                        </div>
+                        <span>500+ Happy Patients</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">About Me</div>
+                <h2 class="section-title">Dedicated to Your Natural Wellness</h2>
+                <p class="section-description">
+                    With over 5 years of experience in traditional herbal medicine, 
+                    I combines ancient wisdom with modern understanding to provide 
+                    holistic healing solutions.
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="scientist-herbs.jpg" alt="Zarar Ahmad preparing herbal medicines" class="about-img">
+                </div>
+                <div class="about-text">
+                    <h3 class="about-title">Background & Qualifications</h3>
+                    <div class="qualifications">
+                        <div class="qualification">
+                            <svg class="qualification-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                            </svg>
+                            <div class="qualification-text">
+                                <h4>Master's in Traditional Medicine</h4>
+                                <p>Pakistan Tibbya College</p>
+                            </div>
+                        </div>
+                        <div class="qualification">
+                            <svg class="qualification-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                            </svg>
+                            <div class="qualification-text">
+                                <h4>Certified Herbalist</h4>
+                                <p>Pakistan Tibbi Counsil </p>
+                            </div>
+                        </div>
+                        <div class="qualification">
+                            <svg class="qualification-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                            </svg>
+                            <div class="qualification-text">
+                                <h4>5+ Years Experience</h4>
+                                <p>Treating patients with natural remedies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="about-mission">
+                        My mission is to bridge the gap between traditional healing wisdom and modern healthcare needs. 
+                        I believe in treating the root cause, not just the symptoms, using nature's most powerful remedies 
+                        to restore balance and promote lasting wellness.
+                    </p>
+                </div>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7 7-7z"/>
+                        </svg>
+                    </div>
+                    <h4>Patient-Centered Care</h4>
+                    <p>Every treatment plan is personalized to your unique needs and health goals.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/>
+                        </svg>
+                    </div>
+                    <h4>Natural Approach</h4>
+                    <p>Using only the finest herbs and natural ingredients for safe, effective healing.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h4>Proven Results</h4>
+                    <p>Time-tested remedies backed by years of successful patient outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Our Services</div>
+                <h2 class="section-title">Comprehensive Herbal Treatments</h2>
+                <p class="section-description">
+                    From digestive wellness to skin health, we offer specialized herbal solutions 
+                    for a wide range of health conditions.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h4>Digestive Health</h4>
+                    <p>Natural remedies for IBS, acid reflux, and digestive disorders</p>
+                    <div class="service-conditions">
+                        <span class="condition-tag">Acid Reflux</span>
+                        <span class="condition-tag">IBS</span>
+                        <span class="condition-tag">Constipation</span>
+                        <span class="condition-tag">Bloating</span>
+                    </div>
+                    <!-- <button class="btn btn-outline">Learn More</button> -->
+                </div>
+                <div class="service-card">
+                    <h4>Skin Conditions</h4>
+                    <p>Herbal treatments for eczema, acne, and skin inflammation</p>
+                    <div class="service-conditions">
+                        <span class="condition-tag">Eczema</span>
+                        <span class="condition-tag">Acne</span>
+                        <span class="condition-tag">Psoriasis</span>
+                        <span class="condition-tag">Dermatitis</span>
+                    </div>
+                    <!-- <button class="btn btn-outline">Learn More</button> -->
+                </div>
+                <div class="service-card">
+                    <h4>Joint & Muscle Pain</h4>
+                    <p>Anti-inflammatory herbs for arthritis and muscle pain relief</p>
+                    <div class="service-conditions">
+                        <span class="condition-tag">Arthritis</span>
+                        <span class="condition-tag">Joint Pain</span>
+                        <span class="condition-tag">Muscle Aches</span>
+                        <span class="condition-tag">Inflammation</span>
+                    </div>
+                    <!-- <button class="btn btn-outline">Learn More</button> -->
+                </div>
+                <div class="service-card">
+                    <h4>Respiratory Health</h4>
+                    <p>Natural support for asthma, allergies, and respiratory issues</p>
+                    <div class="service-conditions">
+                        <span class="condition-tag">Asthma</span>
+                        <span class="condition-tag">Allergies</span>
+                        <span class="condition-tag">Bronchitis</span>
+                        <span class="condition-tag">Cough</span>
+                    </div>
+                    <!-- <button class="btn btn-outline">Learn More</button> -->
+                </div>
+                <div class="service-card">
+                    <h4>Hair Loss</h4>
+                    <p>Natural treatments and herbal remedies to support hair growth and reduce thinning</p>
+                    <div class="service-conditions">
+                        <span class="condition-tag">Alopecia</span>
+                        <span class="condition-tag">thin hair</span>
+                        <span class="condition-tag">Scalp Health</span>
+                        <span class="condition-tag">Hair Breakage</span>
+                    </div>
+                    <!-- <button class="btn btn-outline">Learn More</button> -->
+                </div>
+                <div class="service-card">
+                    <h4>Women's Health</h4>
+                    <p>Specialized herbal support for women's unique health needs</p>
+                    <div class="service-conditions">
+                        <span class="condition-tag">Hormonal Balance</span>
+                        <span class="condition-tag">Menstrual Issues</span>
+                        <span class="condition-tag">Menopause</span>
+                        <span class="condition-tag">PCOS</span>
+                    </div>
+                    <!-- <button class="btn btn-outline">Learn More</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Patient Stories</div>
+                <h2 class="section-title">What Our Patients Say</h2>
+                <p class="section-description">
+                    Real stories from patients who have experienced the healing power of natural medicine.
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Sarah Ahmed</h4>
+                            <p>Digestive Issues</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <div class="stars">
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "After years of digestive problems, Zarar Ahmad herbal treatment completely transformed my health. I'm finally pain-free and can enjoy food again!"
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Muhammad Hassan</h4>
+                            <p>Joint Pain</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <div class="stars">
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "The joint pain relief oil worked wonders for my arthritis. I can now walk without pain and have reduced my dependency on conventional painkillers."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Fatima Khan</h4>
+                            <p>Skin Problems</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <div class="stars">
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "My eczema was severe for years. Zarar Ahmad's natural treatment cleared my skin completely. I'm so grateful for his expertise and care."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Ali Raza</h4>
+                            <p>Hair Loss</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <div class="stars">
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "The Hair Loss formula really helps's me to grow my hair back"
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Aisha Malik</h4>
+                            <p>Hormonal Issues</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <div class="stars">
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        " Zarar's women's health formula regulated my hormones naturally. My energy levels are back to normal and I feel like myself again."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Omar Sheikh</h4>
+                            <p>Respiratory Problems</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <div class="stars">
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "The respiratory support treatment helped me breathe easier. My asthma symptoms have significantly improved with his natural approach."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Get in Touch</div>
+                <h2 class="section-title">Contact & Location</h2>
+                <p class="section-description">
+                    Ready to start your natural healing journey? Get in touch with us to schedule 
+                    a consultation or visit our clinic.
+                </p>
+            </div>
+            <div class="contact-content premium-contact">
+                <div class="contact-info premium-card">
+                    <h3 class="premium-heading">
+                        <svg class="premium-heading-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+                        Contact Information
+                    </h3>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon premium-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0c0 4.97-4.03 9-9 9"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Clinic Address</h4>
+                                <p>
+                                    Near Jamia Masjid Noor<br>
+                                    Mirpur chak87, Shahkot<br>
+                                    Punjab, Pakistan
+                                </p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="contact-item">
+                            <div class="contact-icon premium-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone & WhatsApp</h4>
+                                <p><a href="https://wa.me/923001234567" class="premium-link" target="_blank">+92 3327274299</a></p>
+                                <p class="contact-note">Available for WhatsApp consultations</p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="contact-item">
+                            <div class="contact-icon premium-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:dr.ahmad@herbalhealing.com" class="premium-link">zarar.ahmad@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="contact-item">
+                            <div class="contact-icon premium-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Clinic Hours</h4>
+                                <div class="clinic-hours">
+                                    <p>Monday - Friday: <strong>9:00 AM - 6:00 PM</strong></p>
+                                    <p>Saturday: <strong>9:00 AM - 2:00 PM</strong></p>
+                                    <p>Sunday: <span style="color:#e74c3c;font-weight:bold;">Closed</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-placeholder premium-map" onclick="window.open('https://maps.app.goo.gl/8hWA86xpVNoyop2s9','_blank')" title="Open in Google Maps" style="cursor:pointer;">
+                        <div class="map-content">
+                            <svg class="map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0c0 4.97-4.03 9-9 9"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <p>Interactive Map</p>
+                            <p class="map-note">Click to view location</p>
+                            <a href="https://maps.app.goo.gl/8hWA86xpVNoyop2s9" target="_blank" class="premium-link" style="display:inline-block;margin-top:8px;">View on Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container premium-card">
+                        <div class="contact-form-card">
+                            <div class="form-header">
+                                <h4 class="premium-heading">
+                                    <svg class="premium-heading-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    Send us a Message
+                                </h4>
+                                <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                            </div>
+
+                            <form class="contact-form premium-form" id="contactForm"
+                                action="https://formspree.io/f/mjkobjrd"
+                                method="POST">
+                                
+                                <!-- Hidden fields -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <!-- Optional: Redirect to a thank-you page after submission -->
+                                <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> -->
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+92 300 1234567" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="healthConcern">Health Concern</label>
+                                    <input type="text" id="healthConcern" name="healthConcern" placeholder="Brief description of your health concern" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="4" placeholder="Please describe your symptoms, current medications, and any questions you have..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary premium-btn">
+                                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+       
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/>
+                        </svg>
+                        <span class="footer-title">Hakeem Zarar Ahmad</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner in natural healing and herbal medicine. 
+                        Committed to your wellness journey.
+                    </p>
+                    <div class="social-links">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/zarar.ahmad1" class="social-link" target="_blank" aria-label="Facebook">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 5 3.657 9.127 8.438 9.877v-6.987h-2.54v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.632.771-1.632 1.562v1.875h2.773l-.443 2.89h-2.33v6.987C18.343 21.127 22 17 22 12"/>
+                            </svg>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="YOUR_TWITTER_LINK_HERE" class="social-link" target="_blank" aria-label="Twitter">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 5.924c-.793.352-1.645.59-2.54.698a4.48 4.48 0 0 0 1.963-2.475 8.94 8.94 0 0 1-2.828 1.082A4.48 4.48 0 0 0 11.07 9.03a12.72 12.72 0 0 1-9.23-4.68 4.48 4.48 0 0 0 1.39 5.98c-.73-.023-1.418-.224-2.018-.56v.057a4.48 4.48 0 0 0 3.6 4.39c-.346.094-.71.144-1.085.144-.266 0-.522-.025-.773-.073a4.48 4.48 0 0 0 4.18 3.11A8.98 8.98 0 0 1 2 19.54a12.67 12.67 0 0 0 6.88 2.02c8.26 0 12.78-6.84 12.78-12.78 0-.195-.004-.39-.013-.583A9.14 9.14 0 0 0 24 4.59a8.93 8.93 0 0 1-2.54.698z"/>
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/zarar87rb" class="social-link" target="_blank" aria-label="Instagram">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.974 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.974-1.246-2.242-1.308-3.608C2.013 5.668 2 6.077 2 9.337v5.326c0 3.26.013 3.669.072 4.949.059 1.281.275 2.393 1.256 3.374.981.981 2.093 1.197 3.374 1.256 1.28.059 1.689.072 4.949.072s3.669-.013 4.949-.072c1.281-.059 2.393-.275 3.374-1.256.981-.981 1.197-2.093 1.256-3.374.059-1.28.072-1.689.072-4.949V9.337c0-3.26-.013-3.669-.072-4.949-.059-1.281-.275-2.393-1.256-3.374-.981-.981-2.093-1.197-3.374-1.256C15.669.013 15.26 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Digestive Health</a></li>
+                        <li><a href="#">Skin Conditions</a></li>
+                        <li><a href="#">Joint Pain Relief</a></li>
+                        <li><a href="#">Hair Loss</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title-section">
+                    <h2>Book Consultation</h2>
+                    <a href="https://wa.me/923327274299" target="_blank">
+                        <button>Book Consultation</button>
+                    </a>
+                </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script>
+    function showWhatsAppMessage() {
+        // Show WhatsApp message and scroll to it
+        var msg = document.getElementById('whatsappMessage');
+        if (msg) {
+            msg.style.display = 'block';
+            msg.scrollIntoView({behavior: 'smooth', block: 'center'});
+        }
+    }
+
+    // Hide WhatsApp message every time the product modal opens
+    function openProductModal(productId) {
+        // ...existing code to open modal and set product info...
+        var msg = document.getElementById('whatsappMessage');
+        if (msg) msg.style.display = 'none';
+        // ...existing code...
+    }
+    </script>
+</body>
+</html>
+
